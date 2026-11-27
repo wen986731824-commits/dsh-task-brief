@@ -35,6 +35,7 @@
     "docs",
     "icon.svg",
     "README.md",
+    "MIGRATION.md",
     "LICENSE"
   ],
   "engines": {
