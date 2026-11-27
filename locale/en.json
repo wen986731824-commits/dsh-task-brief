@@ -1,0 +1,9 @@
+{
+  "meta": {
+    "title": "Task brief",
+    "description": "Answers the first task of every new Session with a task brief before working: what the task really is, its type, difficulty, hard requirements, workload, token and time estimates, and the model plus reasoning effort it recommends for the job. Recommendations only — your model selection is never changed. Later tasks and resumed Sessions stay quiet.",
+    "detail": "docs/DETAIL.md"
+  },
+  "hint": "Task brief first",
+  "hintTitle": "The first task of a new Session is answered with a task brief: task, type, difficulty, requirements, workload, token and time estimates, and the recommended model with reasoning effort. Work starts right after it; models are recommended, never switched automatically."
+}

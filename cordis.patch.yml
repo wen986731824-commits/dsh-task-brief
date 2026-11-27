@@ -1,0 +1,14 @@
+# dsh-task-brief bundle patch.
+#
+# One dual-face row: the Host half injects the task-brief protocol into the
+# system prompt and keeps a live model/reasoning-effort catalog; the Client
+# half shows a one-line hint on a blank new Session.
+- insert:
+    - id: task-brief
+      name: 'dsh-task-brief'
+      config:
+        enabled: true
+        includeModelCatalog: true
+        maxCatalogModels: 24
+        catalogTimeoutMs: 12000
+        showModelHint: true

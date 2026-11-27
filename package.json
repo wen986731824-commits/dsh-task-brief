@@ -1,0 +1,63 @@
+{
+  "name": "dsh-task-brief",
+  "version": "1.0.0",
+  "description": "Task brief on the first task of every new Session: type, difficulty, requirements, workload, token/time estimates, and a recommended model with reasoning effort.",
+  "type": "module",
+  "license": "MIT",
+  "author": "dsh-task-brief contributors",
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "task-brief",
+    "model-selection",
+    "token-estimate"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wen986731824-commits/dsh-task-brief.git"
+  },
+  "homepage": "https://github.com/wen986731824-commits/dsh-task-brief#readme",
+  "bugs": {
+    "url": "https://github.com/wen986731824-commits/dsh-task-brief/issues"
+  },
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "docs",
+    "icon.svg",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=22.13"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-client-locale",
+        "@deepseek-ai/dsh-client-ui-conversation"
+      ]
+    }
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
+  "scripts": {
+    "test": "node scripts/test-host.mjs"
+  }
+}
